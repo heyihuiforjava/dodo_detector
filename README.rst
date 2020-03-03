@@ -105,8 +105,8 @@ Example on running a single-shot detector:
 
 .. code-block:: python
 
-    from dodo_detector.detection import SingleShotDetector
-    detector = SingleShotDetector('path/to/frozen/graph.pb', 'path/to/labels.pbtxt', 5)
+    from dodo_detector.detection import TFObjectDetector
+    detector = TFObjectDetector('path/to/frozen/graph.pb', 'path/to/labels.pbtxt', 5)
     marked_image, obj_dict = detector.from_image(im)
 
 Have fun!
